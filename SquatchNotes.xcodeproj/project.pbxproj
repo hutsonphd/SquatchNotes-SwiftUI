@@ -19,12 +19,6 @@
 		3ADEEEF72603B30300816B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEEEE12603B30300816B85 /* Assets.xcassets */; };
 		3ADEEF082603CE8700816B85 /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF072603CE8700816B85 /* NotesList.swift */; };
 		3ADEEF092603CE8700816B85 /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF072603CE8700816B85 /* NotesList.swift */; };
-		3ADEEF0F2603CE9900816B85 /* NotesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF0E2603CE9900816B85 /* NotesRow.swift */; };
-		3ADEEF102603CE9900816B85 /* NotesRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF0E2603CE9900816B85 /* NotesRow.swift */; };
-		3ADEEF142603D4FA00816B85 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF132603D4FA00816B85 /* Note.swift */; };
-		3ADEEF152603D4FA00816B85 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF132603D4FA00816B85 /* Note.swift */; };
-		3ADEEF192603DF6000816B85 /* notesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEEF182603DF6000816B85 /* notesData.json */; };
-		3ADEEF1A2603DF6000816B85 /* notesData.json in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEEF182603DF6000816B85 /* notesData.json */; };
 		3ADEEF252603EABD00816B85 /* NotesEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF242603EABD00816B85 /* NotesEditor.swift */; };
 		3ADEEF262603EABD00816B85 /* NotesEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF242603EABD00816B85 /* NotesEditor.swift */; };
 		3ADEEF322604058F00816B85 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF312604058F00816B85 /* FirebaseAppDistribution-Beta */; };
@@ -54,6 +48,7 @@
 /* Begin PBXFileReference section */
 		3A80314226045360007F0703 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
 		3A80314926045FB9007F0703 /* NewNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNote.swift; sourceTree = "<group>"; };
+		3A80315E26047628007F0703 /* SquatchNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SquatchNotes.entitlements; sourceTree = "<group>"; };
 		3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatchNotesApp.swift; sourceTree = "<group>"; };
 		3ADEEEE02603B30100816B85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3ADEEEE12603B30300816B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -63,9 +58,6 @@
 		3ADEEEF02603B30300816B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ADEEEF12603B30300816B85 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		3ADEEF072603CE8700816B85 /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
-		3ADEEF0E2603CE9900816B85 /* NotesRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesRow.swift; sourceTree = "<group>"; };
-		3ADEEF132603D4FA00816B85 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		3ADEEF182603DF6000816B85 /* notesData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = notesData.json; sourceTree = "<group>"; };
 		3ADEEF242603EABD00816B85 /* NotesEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesEditor.swift; sourceTree = "<group>"; };
 		3ADEEF532604091900816B85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3ADEEF65260449BE00816B85 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
@@ -109,6 +101,7 @@
 		3ADEEED92603B30100816B85 = {
 			isa = PBXGroup;
 			children = (
+				3A80315E26047628007F0703 /* SquatchNotes.entitlements */,
 				3ADEEEDE2603B30100816B85 /* Shared */,
 				3ADEEEE82603B30300816B85 /* iOS */,
 				3ADEEEEF2603B30300816B85 /* macOS */,
@@ -120,9 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				3ADEEF642604495D00816B85 /* utils */,
-				3ADEEF042603B31E00816B85 /* Resources */,
 				3ADEEF032603B31700816B85 /* Views */,
-				3ADEEF022603B30E00816B85 /* Models */,
 				3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */,
 				3ADEEEE12603B30300816B85 /* Assets.xcassets */,
 				3ADEEF532604091900816B85 /* GoogleService-Info.plist */,
@@ -156,33 +147,16 @@
 			path = macOS;
 			sourceTree = "<group>";
 		};
-		3ADEEF022603B30E00816B85 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-				3ADEEF132603D4FA00816B85 /* Note.swift */,
-			);
-			path = Models;
-			sourceTree = "<group>";
-		};
 		3ADEEF032603B31700816B85 /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				3ADEEEE02603B30100816B85 /* ContentView.swift */,
 				3ADEEF072603CE8700816B85 /* NotesList.swift */,
-				3ADEEF0E2603CE9900816B85 /* NotesRow.swift */,
 				3ADEEF242603EABD00816B85 /* NotesEditor.swift */,
 				3ADEEF6A26044BB600816B85 /* Login.swift */,
 				3A80314926045FB9007F0703 /* NewNote.swift */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		3ADEEF042603B31E00816B85 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				3ADEEF182603DF6000816B85 /* notesData.json */,
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		3ADEEF642604495D00816B85 /* utils */ = {
@@ -294,7 +268,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ADEEEF62603B30300816B85 /* Assets.xcassets in Resources */,
-				3ADEEF192603DF6000816B85 /* notesData.json in Resources */,
 				3ADEEF542604091A00816B85 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ADEEEF72603B30300816B85 /* Assets.xcassets in Resources */,
-				3ADEEF1A2603DF6000816B85 /* notesData.json in Resources */,
 				3ADEEF552604091A00816B85 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,12 +288,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ADEEF142603D4FA00816B85 /* Note.swift in Sources */,
 				3ADEEEF42603B30300816B85 /* ContentView.swift in Sources */,
 				3A80314A26045FB9007F0703 /* NewNote.swift in Sources */,
 				3ADEEF082603CE8700816B85 /* NotesList.swift in Sources */,
 				3ADEEF252603EABD00816B85 /* NotesEditor.swift in Sources */,
-				3ADEEF0F2603CE9900816B85 /* NotesRow.swift in Sources */,
 				3A80314326045360007F0703 /* NotesViewModel.swift in Sources */,
 				3ADEEF6B26044BB600816B85 /* Login.swift in Sources */,
 				3ADEEF66260449BE00816B85 /* SessionStore.swift in Sources */,
@@ -333,12 +303,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3ADEEF152603D4FA00816B85 /* Note.swift in Sources */,
 				3ADEEEF52603B30300816B85 /* ContentView.swift in Sources */,
 				3A80314B26045FB9007F0703 /* NewNote.swift in Sources */,
 				3ADEEF092603CE8700816B85 /* NotesList.swift in Sources */,
 				3ADEEF262603EABD00816B85 /* NotesEditor.swift in Sources */,
-				3ADEEF102603CE9900816B85 /* NotesRow.swift in Sources */,
 				3A80314426045360007F0703 /* NotesViewModel.swift in Sources */,
 				3ADEEF6C26044BB600816B85 /* Login.swift in Sources */,
 				3ADEEF67260449BE00816B85 /* SessionStore.swift in Sources */,
@@ -465,6 +433,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SquatchNotes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9Z3N2R97A;
 				ENABLE_PREVIEWS = YES;
@@ -476,6 +446,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hutsonlabs.SquatchNotes;
 				PRODUCT_NAME = SquatchNotes;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -487,6 +458,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = SquatchNotes.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = M9Z3N2R97A;
 				ENABLE_PREVIEWS = YES;
@@ -498,6 +471,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.hutsonlabs.SquatchNotes;
 				PRODUCT_NAME = SquatchNotes;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SDKROOT = iphoneos;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
