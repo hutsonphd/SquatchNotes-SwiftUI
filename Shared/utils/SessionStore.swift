@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FirebaseAuth
+import Firebase
 
 struct User {
     var uid: String
@@ -40,7 +40,7 @@ class SessionStore: ObservableObject {
         authRef.createUser(withEmail: email, password: password)
     }
     
-    func SignOut () -> Bool {
+    @discardableResult func signOut () -> Bool {
         do {
             try authRef.signOut()
             self.session = nil

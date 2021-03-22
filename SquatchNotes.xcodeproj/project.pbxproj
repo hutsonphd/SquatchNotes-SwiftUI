@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A80314326045360007F0703 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80314226045360007F0703 /* NotesViewModel.swift */; };
-		3A80314426045360007F0703 /* NotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80314226045360007F0703 /* NotesViewModel.swift */; };
-		3A80314A26045FB9007F0703 /* NewNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80314926045FB9007F0703 /* NewNote.swift */; };
-		3A80314B26045FB9007F0703 /* NewNote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A80314926045FB9007F0703 /* NewNote.swift */; };
+		3A22E4BF26074DB30094CF60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4BE26074DB30094CF60 /* Note.swift */; };
+		3A22E4C026074DB30094CF60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4BE26074DB30094CF60 /* Note.swift */; };
+		3A22E4C42607523D0094CF60 /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4C32607523D0094CF60 /* SignOut.swift */; };
+		3A22E4C52607523D0094CF60 /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4C32607523D0094CF60 /* SignOut.swift */; };
+		3ABDB801260712A700CF9FCE /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 3ABDB800260712A700CF9FCE /* HighlightedTextEditor */; };
 		3ADEEEF22603B30300816B85 /* SquatchNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */; };
 		3ADEEEF32603B30300816B85 /* SquatchNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */; };
 		3ADEEEF42603B30300816B85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEE02603B30100816B85 /* ContentView.swift */; };
@@ -46,8 +47,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A80314226045360007F0703 /* NotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesViewModel.swift; sourceTree = "<group>"; };
-		3A80314926045FB9007F0703 /* NewNote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNote.swift; sourceTree = "<group>"; };
+		3A22E4BE26074DB30094CF60 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		3A22E4C32607523D0094CF60 /* SignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOut.swift; sourceTree = "<group>"; };
 		3A80315E26047628007F0703 /* SquatchNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SquatchNotes.entitlements; sourceTree = "<group>"; };
 		3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatchNotesApp.swift; sourceTree = "<group>"; };
 		3ADEEEE02603B30100816B85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -74,6 +75,7 @@
 				3ADEEF382604058F00816B85 /* FirebaseStorageSwift-Beta in Frameworks */,
 				3ADEEF402604058F00816B85 /* FirebaseAnalytics in Frameworks */,
 				3ADEEF482604058F00816B85 /* FirebaseFunctions in Frameworks */,
+				3ABDB801260712A700CF9FCE /* HighlightedTextEditor in Frameworks */,
 				3ADEEF442604058F00816B85 /* FirebaseFirestore in Frameworks */,
 				3ADEEF3A2604058F00816B85 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				3ADEEF502604058F00816B85 /* FirebaseRemoteConfig in Frameworks */,
@@ -154,7 +156,7 @@
 				3ADEEF072603CE8700816B85 /* NotesList.swift */,
 				3ADEEF242603EABD00816B85 /* NotesEditor.swift */,
 				3ADEEF6A26044BB600816B85 /* Login.swift */,
-				3A80314926045FB9007F0703 /* NewNote.swift */,
+				3A22E4C32607523D0094CF60 /* SignOut.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -163,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				3ADEEF65260449BE00816B85 /* SessionStore.swift */,
-				3A80314226045360007F0703 /* NotesViewModel.swift */,
+				3A22E4BE26074DB30094CF60 /* Note.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -201,6 +203,7 @@
 				3ADEEF4B2604058F00816B85 /* FirebaseInAppMessaging-Beta */,
 				3ADEEF4D2604058F00816B85 /* FirebaseMLModelDownloader */,
 				3ADEEF4F2604058F00816B85 /* FirebaseRemoteConfig */,
+				3ABDB800260712A700CF9FCE /* HighlightedTextEditor */,
 			);
 			productName = "SquatchNotes (iOS)";
 			productReference = 3ADEEEE62603B30300816B85 /* SquatchNotes.app */;
@@ -251,6 +254,7 @@
 			mainGroup = 3ADEEED92603B30100816B85;
 			packageReferences = (
 				3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				3ABDB7FF260712A600CF9FCE /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */,
 			);
 			productRefGroup = 3ADEEEE72603B30300816B85 /* Products */;
 			projectDirPath = "";
@@ -289,10 +293,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ADEEEF42603B30300816B85 /* ContentView.swift in Sources */,
-				3A80314A26045FB9007F0703 /* NewNote.swift in Sources */,
+				3A22E4C42607523D0094CF60 /* SignOut.swift in Sources */,
 				3ADEEF082603CE8700816B85 /* NotesList.swift in Sources */,
 				3ADEEF252603EABD00816B85 /* NotesEditor.swift in Sources */,
-				3A80314326045360007F0703 /* NotesViewModel.swift in Sources */,
+				3A22E4BF26074DB30094CF60 /* Note.swift in Sources */,
 				3ADEEF6B26044BB600816B85 /* Login.swift in Sources */,
 				3ADEEF66260449BE00816B85 /* SessionStore.swift in Sources */,
 				3ADEEEF22603B30300816B85 /* SquatchNotesApp.swift in Sources */,
@@ -304,10 +308,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ADEEEF52603B30300816B85 /* ContentView.swift in Sources */,
-				3A80314B26045FB9007F0703 /* NewNote.swift in Sources */,
+				3A22E4C52607523D0094CF60 /* SignOut.swift in Sources */,
 				3ADEEF092603CE8700816B85 /* NotesList.swift in Sources */,
 				3ADEEF262603EABD00816B85 /* NotesEditor.swift in Sources */,
-				3A80314426045360007F0703 /* NotesViewModel.swift in Sources */,
+				3A22E4C026074DB30094CF60 /* Note.swift in Sources */,
 				3ADEEF6C26044BB600816B85 /* Login.swift in Sources */,
 				3ADEEF67260449BE00816B85 /* SessionStore.swift in Sources */,
 				3ADEEEF32603B30300816B85 /* SquatchNotesApp.swift in Sources */,
@@ -560,6 +564,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		3ABDB7FF260712A600CF9FCE /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kyle-n/HighlightedTextEditor";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.7.0;
+			};
+		};
 		3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -571,6 +583,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		3ABDB800260712A700CF9FCE /* HighlightedTextEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ABDB7FF260712A600CF9FCE /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */;
+			productName = HighlightedTextEditor;
+		};
 		3ADEEF312604058F00816B85 /* FirebaseAppDistribution-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;

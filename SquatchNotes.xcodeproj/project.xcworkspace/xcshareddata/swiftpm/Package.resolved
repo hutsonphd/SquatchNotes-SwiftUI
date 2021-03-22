@@ -74,6 +74,15 @@
         }
       },
       {
+        "package": "HighlightedTextEditor",
+        "repositoryURL": "https://github.com/kyle-n/HighlightedTextEditor",
+        "state": {
+          "branch": null,
+          "revision": "710bb6f99f3f1fa1db4d14c3fdd399b2df3b1fb3",
+          "version": "1.7.0"
+        }
+      },
+      {
         "package": "leveldb",
         "repositoryURL": "https://github.com/firebase/leveldb.git",
         "state": {
