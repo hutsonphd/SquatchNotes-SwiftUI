@@ -20,6 +20,15 @@
         }
       },
       {
+        "package": "Down",
+        "repositoryURL": "https://github.com/johnxnguyen/Down.git",
+        "state": {
+          "branch": null,
+          "revision": "0bcd20dc56ad7fd47bbb99a1d2302a8bfa43b6d0",
+          "version": "0.10.0"
+        }
+      },
+      {
         "package": "Firebase",
         "repositoryURL": "https://github.com/firebase/firebase-ios-sdk.git",
         "state": {
@@ -74,15 +83,6 @@
         }
       },
       {
-        "package": "HighlightedTextEditor",
-        "repositoryURL": "https://github.com/kyle-n/HighlightedTextEditor",
-        "state": {
-          "branch": null,
-          "revision": "710bb6f99f3f1fa1db4d14c3fdd399b2df3b1fb3",
-          "version": "1.7.0"
-        }
-      },
-      {
         "package": "leveldb",
         "repositoryURL": "https://github.com/firebase/leveldb.git",
         "state": {
@@ -116,6 +116,15 @@
           "branch": null,
           "revision": "e1904bf5a5f79cb7e0ff68a427a53a93b652fcd1",
           "version": "1.15.0"
+        }
+      },
+      {
+        "package": "SwiftDown",
+        "repositoryURL": "https://github.com/qeude/SwiftDown",
+        "state": {
+          "branch": null,
+          "revision": "86b8b2ff37c418e59e687b6efa62ef28236ff786",
+          "version": "0.1.6"
         }
       }
     ]

@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import HighlightedTextEditor
+import SwiftDown
 
 struct NotesEditor: View {
     
@@ -17,7 +17,9 @@ struct NotesEditor: View {
         ZStack (alignment: .topTrailing) {
             Color("Background")
                 .ignoresSafeArea(.all)
-            HighlightedTextEditor(text: $inputText, highlightRules: .markdown)
+            SwiftDownEditor(text: $inputText)
+                .insetsSize(40)
+                .theme(Theme.BuiltIn.defaultLight.theme())
                 .padding()
                 .padding(.top, 20)
                 .autocapitalization(.none)

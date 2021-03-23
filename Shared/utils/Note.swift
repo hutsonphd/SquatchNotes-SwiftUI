@@ -6,16 +6,28 @@
 //
 
 import Foundation
-import FirebaseFirestore
+import FirebaseFirestore 
 import FirebaseAuth
 import FirebaseFirestoreSwift
 
 struct Note: Identifiable, Codable {
     var id: String
     var body: String
-    var createdAt: String
-    var updatedAt: String
+    var createdAt: Date
+    var createdAtString: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM dd, YYYY"
+        return formatter.string(from: createdAt)
+    }
+    var updatedAt: Date
+    var updatedAtString: String {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "MMMM dd, YYYY"
+        return formatter.string(from: updatedAt)
+    }
 }
+
+extension Note: Equatable, Hashable {}
 
 class NoteDataModel: ObservableObject {
     @Published var notes = [Note]()
@@ -23,7 +35,7 @@ class NoteDataModel: ObservableObject {
     private var db = Firestore.firestore()
     private let user = Auth.auth().currentUser
   
-  func fetchData() {
+  func getNotes() {
     if user != nil {
     db.collection("notes").whereField("owner", isEqualTo: user!.uid).addSnapshotListener { (querySnapshot, error) in
           guard let documents = querySnapshot?.documents else {
@@ -35,13 +47,13 @@ class NoteDataModel: ObservableObject {
                 let data = queryDocumentSnapshot.data()
                 let id = queryDocumentSnapshot.documentID
                 let body = data["body"] as? String ?? ""
-                let createdAt = data["createdAt"] as? String ?? ""
-                let updatedAt = data["updatedAt"] as? String ?? ""
+                let createdAt = (data["createdAt"] as? Timestamp)?.dateValue() ?? Date()
+                let updatedAt = (data["updatedAt"] as? Timestamp)?.dateValue() ?? Date()
 
                 return Note(id: id, body: body, createdAt: createdAt, updatedAt: updatedAt)
-
+                }
+            }
         }
     }
-    }
-  }
+
 }
