@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3A1B1FDE260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B1FDC260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld */; };
 		3A1B1FDF260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B1FDC260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld */; };
+		3A1B1FF7260D1AD1006DA9D2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B1FF6260D1AD1006DA9D2 /* CoreDataManager.swift */; };
+		3A1B1FF8260D1AD1006DA9D2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B1FF6260D1AD1006DA9D2 /* CoreDataManager.swift */; };
 		3A22E4BF26074DB30094CF60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4BE26074DB30094CF60 /* Note.swift */; };
 		3A22E4C026074DB30094CF60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4BE26074DB30094CF60 /* Note.swift */; };
 		3A22E4C42607523D0094CF60 /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4C32607523D0094CF60 /* SignOut.swift */; };
@@ -72,6 +74,7 @@
 
 /* Begin PBXFileReference section */
 		3A1B1FDD260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SquatchNotesDataModel.xcdatamodel; sourceTree = "<group>"; };
+		3A1B1FF6260D1AD1006DA9D2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		3A22E4BE26074DB30094CF60 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		3A22E4C32607523D0094CF60 /* SignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOut.swift; sourceTree = "<group>"; };
 		3A5C8B0E260A839600063EA5 /* ArchitectsDaughter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArchitectsDaughter-Regular.ttf"; sourceTree = "<group>"; };
@@ -139,6 +142,7 @@
 		3A1B1FE2260D1A64006DA9D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3A1B1FF6260D1AD1006DA9D2 /* CoreDataManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -394,6 +398,7 @@
 				3A22E4BF26074DB30094CF60 /* Note.swift in Sources */,
 				3ADEEF6B26044BB600816B85 /* Login.swift in Sources */,
 				3ADEEF66260449BE00816B85 /* SessionStore.swift in Sources */,
+				3A1B1FF7260D1AD1006DA9D2 /* CoreDataManager.swift in Sources */,
 				3ADEEEF22603B30300816B85 /* SquatchNotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -410,6 +415,7 @@
 				3A22E4C026074DB30094CF60 /* Note.swift in Sources */,
 				3ADEEF6C26044BB600816B85 /* Login.swift in Sources */,
 				3ADEEF67260449BE00816B85 /* SessionStore.swift in Sources */,
+				3A1B1FF8260D1AD1006DA9D2 /* CoreDataManager.swift in Sources */,
 				3ADEEEF32603B30300816B85 /* SquatchNotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
