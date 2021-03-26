@@ -8,12 +8,6 @@
 import Foundation
 import Firebase
 
-struct User {
-    var uid: String
-    var email: String
-}
-
-
 class SessionStore: ObservableObject {
     @Published var session: User?
     @Published var isAnon: Bool = false

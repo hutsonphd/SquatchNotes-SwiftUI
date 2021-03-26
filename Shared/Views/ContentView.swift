@@ -6,22 +6,40 @@
 //
 
 import SwiftUI
+import UIKit
 
 struct ContentView: View {
 
     @ObservedObject var sessionStore = SessionStore()
+    @ObservedObject var notes = NotesViewModel()
     
     init() {
         sessionStore.listen()
+        notes.getNotes()
     }
     
     
     var body: some View {
-        NotesList()
-              .fullScreenCover(isPresented: $sessionStore.isAnon, content: {
-                  Login()
-              })
-
+        NavigationView {
+            ZStack {
+                Color("Background")
+                    .edgesIgnoringSafeArea(/*@START_MENU_TOKEN@*/.all/*@END_MENU_TOKEN@*/)
+                List {
+                    ForEach(notes.notes) { note in
+                        NavigationLink(destination: NoteEditor(note: note), label: {
+                            NoteRow(note: note)
+                        })
+                        .listRowBackground(Color("Background"))
+                    }
+                    .onAppear(perform: notes.getNotes)
+                }
+            }
+            .navigationTitle("Notes")
+            .navigationBarItems(trailing: AddNoteButton().padding())
+        }
+        .fullScreenCover(isPresented: $sessionStore.isAnon, content: {
+             Login()
+        })
     }
 }
 

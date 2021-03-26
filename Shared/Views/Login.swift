@@ -2,7 +2,7 @@
 //  Login.swift
 //  SquatchNotes
 //
-//  Created by Hutson on 3/18/21.
+//  Created by Hutson on 3/26/21.
 //
 
 import SwiftUI
@@ -22,7 +22,9 @@ struct Login: View {
                     Login_Image()
                     VStack {
                         TextField("Email", text: $email)
-                        SecureField("Password", text: $password)
+                        SecureField("Password",
+                                    text: $password,
+                                    onCommit: {sessionSession.signIn(email: email, password: password)})
                         }
                         .font(.custom("Cabin-Bold", size: 18))
                         .foregroundColor(Color("Text"))
@@ -58,7 +60,6 @@ struct Login: View {
 }
 
 // MARK: - Login Image
-
 struct Login_Image: View {
     var body: some View {
         VStack {
@@ -76,7 +77,6 @@ struct Login_Image: View {
 }
 
 // MARK: - SignUp Button
-
 struct signUpButton: View {
     var body: some View {
         HStack {
@@ -91,7 +91,6 @@ struct signUpButton: View {
 }
 
 // MARK: - LogIn Button
-
 struct logInButton: View {
     var body: some View {
         HStack {

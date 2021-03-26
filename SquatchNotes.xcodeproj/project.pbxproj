@@ -7,14 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A1B1FDE260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B1FDC260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld */; };
-		3A1B1FDF260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B1FDC260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld */; };
-		3A1B1FF7260D1AD1006DA9D2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B1FF6260D1AD1006DA9D2 /* CoreDataManager.swift */; };
-		3A1B1FF8260D1AD1006DA9D2 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B1FF6260D1AD1006DA9D2 /* CoreDataManager.swift */; };
+		3A1B2026260E4F87006DA9D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B2025260E4F87006DA9D2 /* User.swift */; };
+		3A1B2035260E5FD0006DA9D2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B2034260E5FD0006DA9D2 /* UIColor.swift */; };
+		3A1B203F260E6FF0006DA9D2 /* NoteEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B203E260E6FEF006DA9D2 /* NoteEditor.swift */; };
+		3A1B2040260E6FF0006DA9D2 /* NoteEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B203E260E6FEF006DA9D2 /* NoteEditor.swift */; };
+		3A1B2044260E71CC006DA9D2 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B2043260E71CC006DA9D2 /* NoteRow.swift */; };
+		3A1B2045260E71CC006DA9D2 /* NoteRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B2043260E71CC006DA9D2 /* NoteRow.swift */; };
+		3A1B204E260E8DD3006DA9D2 /* AddNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B204D260E8DD3006DA9D2 /* AddNoteButton.swift */; };
+		3A1B204F260E8DD3006DA9D2 /* AddNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B204D260E8DD3006DA9D2 /* AddNoteButton.swift */; };
+		3A1B205C260E9368006DA9D2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B205B260E9368006DA9D2 /* Login.swift */; };
+		3A1B205D260E9368006DA9D2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B205B260E9368006DA9D2 /* Login.swift */; };
 		3A22E4BF26074DB30094CF60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4BE26074DB30094CF60 /* Note.swift */; };
-		3A22E4C026074DB30094CF60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4BE26074DB30094CF60 /* Note.swift */; };
-		3A22E4C42607523D0094CF60 /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4C32607523D0094CF60 /* SignOut.swift */; };
-		3A22E4C52607523D0094CF60 /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4C32607523D0094CF60 /* SignOut.swift */; };
 		3A5C8B0F260A839600063EA5 /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B0E260A839600063EA5 /* ArchitectsDaughter-Regular.ttf */; };
 		3A5C8B10260A839600063EA5 /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B0E260A839600063EA5 /* ArchitectsDaughter-Regular.ttf */; };
 		3A5C8B34260A84F500063EA5 /* Cabin-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B18260A84F500063EA5 /* Cabin-MediumItalic.ttf */; };
@@ -38,16 +41,12 @@
 		3A5C8B62260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B5F260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf */; };
 		3A5C8B63260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B5F260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf */; };
 		3A5C8B68260A8C0000063EA5 /* SwiftDown in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5C8B67260A8C0000063EA5 /* SwiftDown */; };
-		3A5C8B6E260A90A300063EA5 /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C8B6D260A90A300063EA5 /* NotesList.swift */; };
-		3A5C8B6F260A90A300063EA5 /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A5C8B6D260A90A300063EA5 /* NotesList.swift */; };
 		3ADEEEF22603B30300816B85 /* SquatchNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */; };
 		3ADEEEF32603B30300816B85 /* SquatchNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */; };
 		3ADEEEF42603B30300816B85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEE02603B30100816B85 /* ContentView.swift */; };
 		3ADEEEF52603B30300816B85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEE02603B30100816B85 /* ContentView.swift */; };
 		3ADEEEF62603B30300816B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEEEE12603B30300816B85 /* Assets.xcassets */; };
 		3ADEEEF72603B30300816B85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEEEE12603B30300816B85 /* Assets.xcassets */; };
-		3ADEEF252603EABD00816B85 /* NotesEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF242603EABD00816B85 /* NotesEditor.swift */; };
-		3ADEEF262603EABD00816B85 /* NotesEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF242603EABD00816B85 /* NotesEditor.swift */; };
 		3ADEEF322604058F00816B85 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF312604058F00816B85 /* FirebaseAppDistribution-Beta */; };
 		3ADEEF342604058F00816B85 /* FirebaseInstallations in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF332604058F00816B85 /* FirebaseInstallations */; };
 		3ADEEF362604058F00816B85 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF352604058F00816B85 /* FirebaseMessaging */; };
@@ -68,15 +67,16 @@
 		3ADEEF552604091A00816B85 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3ADEEF532604091900816B85 /* GoogleService-Info.plist */; };
 		3ADEEF66260449BE00816B85 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF65260449BE00816B85 /* SessionStore.swift */; };
 		3ADEEF67260449BE00816B85 /* SessionStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF65260449BE00816B85 /* SessionStore.swift */; };
-		3ADEEF6B26044BB600816B85 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF6A26044BB600816B85 /* Login.swift */; };
-		3ADEEF6C26044BB600816B85 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEF6A26044BB600816B85 /* Login.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		3A1B1FDD260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SquatchNotesDataModel.xcdatamodel; sourceTree = "<group>"; };
-		3A1B1FF6260D1AD1006DA9D2 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		3A1B2025260E4F87006DA9D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3A1B2034260E5FD0006DA9D2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		3A1B203E260E6FEF006DA9D2 /* NoteEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditor.swift; sourceTree = "<group>"; };
+		3A1B2043260E71CC006DA9D2 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
+		3A1B204D260E8DD3006DA9D2 /* AddNoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteButton.swift; sourceTree = "<group>"; };
+		3A1B205B260E9368006DA9D2 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		3A22E4BE26074DB30094CF60 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
-		3A22E4C32607523D0094CF60 /* SignOut.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignOut.swift; sourceTree = "<group>"; };
 		3A5C8B0E260A839600063EA5 /* ArchitectsDaughter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArchitectsDaughter-Regular.ttf"; sourceTree = "<group>"; };
 		3A5C8B18260A84F500063EA5 /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
 		3A5C8B1A260A84F500063EA5 /* Cabin-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Regular.ttf"; sourceTree = "<group>"; };
@@ -88,7 +88,6 @@
 		3A5C8B2B260A84F500063EA5 /* Cabin-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-BoldItalic.ttf"; sourceTree = "<group>"; };
 		3A5C8B5E260A8AB200063EA5 /* Cabin-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
 		3A5C8B5F260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Italic-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
-		3A5C8B6D260A90A300063EA5 /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
 		3A80315E26047628007F0703 /* SquatchNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SquatchNotes.entitlements; sourceTree = "<group>"; };
 		3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatchNotesApp.swift; sourceTree = "<group>"; };
 		3ADEEEE02603B30100816B85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,10 +97,8 @@
 		3ADEEEEE2603B30300816B85 /* SquatchNotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquatchNotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3ADEEEF02603B30300816B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3ADEEEF12603B30300816B85 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		3ADEEF242603EABD00816B85 /* NotesEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesEditor.swift; sourceTree = "<group>"; };
 		3ADEEF532604091900816B85 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3ADEEF65260449BE00816B85 /* SessionStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionStore.swift; sourceTree = "<group>"; };
-		3ADEEF6A26044BB600816B85 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,12 +139,13 @@
 		3A1B1FE2260D1A64006DA9D2 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				3A1B1FF6260D1AD1006DA9D2 /* CoreDataManager.swift */,
+				3A1B2025260E4F87006DA9D2 /* User.swift */,
+				3A22E4BE26074DB30094CF60 /* Note.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		3A1B1FE6260D1A64006DA9D2 /* ViewModels */ = {
+		3A1B202F260E50CE006DA9D2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
 			);
@@ -186,15 +184,14 @@
 		3ADEEEDE2603B30100816B85 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3A1B202F260E50CE006DA9D2 /* ViewModels */,
 				3A1B1FE2260D1A64006DA9D2 /* Models */,
-				3A1B1FE6260D1A64006DA9D2 /* ViewModels */,
 				3A5C8B13260A84A900063EA5 /* Fonts */,
 				3ADEEF642604495D00816B85 /* utils */,
 				3ADEEF032603B31700816B85 /* Views */,
 				3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */,
 				3ADEEEE12603B30300816B85 /* Assets.xcassets */,
 				3ADEEF532604091900816B85 /* GoogleService-Info.plist */,
-				3A1B1FDC260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -229,10 +226,10 @@
 			isa = PBXGroup;
 			children = (
 				3ADEEEE02603B30100816B85 /* ContentView.swift */,
-				3A5C8B6D260A90A300063EA5 /* NotesList.swift */,
-				3ADEEF242603EABD00816B85 /* NotesEditor.swift */,
-				3ADEEF6A26044BB600816B85 /* Login.swift */,
-				3A22E4C32607523D0094CF60 /* SignOut.swift */,
+				3A1B203E260E6FEF006DA9D2 /* NoteEditor.swift */,
+				3A1B2043260E71CC006DA9D2 /* NoteRow.swift */,
+				3A1B204D260E8DD3006DA9D2 /* AddNoteButton.swift */,
+				3A1B205B260E9368006DA9D2 /* Login.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -241,7 +238,7 @@
 			isa = PBXGroup;
 			children = (
 				3ADEEF65260449BE00816B85 /* SessionStore.swift */,
-				3A22E4BE26074DB30094CF60 /* Note.swift */,
+				3A1B2034260E5FD0006DA9D2 /* UIColor.swift */,
 			);
 			path = utils;
 			sourceTree = "<group>";
@@ -391,14 +388,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				3ADEEEF42603B30300816B85 /* ContentView.swift in Sources */,
-				3A22E4C42607523D0094CF60 /* SignOut.swift in Sources */,
-				3A5C8B6E260A90A300063EA5 /* NotesList.swift in Sources */,
-				3ADEEF252603EABD00816B85 /* NotesEditor.swift in Sources */,
-				3A1B1FDE260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld in Sources */,
+				3A1B205C260E9368006DA9D2 /* Login.swift in Sources */,
+				3A1B2035260E5FD0006DA9D2 /* UIColor.swift in Sources */,
 				3A22E4BF26074DB30094CF60 /* Note.swift in Sources */,
-				3ADEEF6B26044BB600816B85 /* Login.swift in Sources */,
+				3A1B203F260E6FF0006DA9D2 /* NoteEditor.swift in Sources */,
+				3A1B204E260E8DD3006DA9D2 /* AddNoteButton.swift in Sources */,
 				3ADEEF66260449BE00816B85 /* SessionStore.swift in Sources */,
-				3A1B1FF7260D1AD1006DA9D2 /* CoreDataManager.swift in Sources */,
+				3A1B2026260E4F87006DA9D2 /* User.swift in Sources */,
+				3A1B2044260E71CC006DA9D2 /* NoteRow.swift in Sources */,
 				3ADEEEF22603B30300816B85 /* SquatchNotesApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -407,16 +404,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1B205D260E9368006DA9D2 /* Login.swift in Sources */,
+				3A1B2045260E71CC006DA9D2 /* NoteRow.swift in Sources */,
+				3A1B2040260E6FF0006DA9D2 /* NoteEditor.swift in Sources */,
 				3ADEEEF52603B30300816B85 /* ContentView.swift in Sources */,
-				3A22E4C52607523D0094CF60 /* SignOut.swift in Sources */,
-				3A5C8B6F260A90A300063EA5 /* NotesList.swift in Sources */,
-				3ADEEF262603EABD00816B85 /* NotesEditor.swift in Sources */,
-				3A1B1FDF260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld in Sources */,
-				3A22E4C026074DB30094CF60 /* Note.swift in Sources */,
-				3ADEEF6C26044BB600816B85 /* Login.swift in Sources */,
 				3ADEEF67260449BE00816B85 /* SessionStore.swift in Sources */,
-				3A1B1FF8260D1AD1006DA9D2 /* CoreDataManager.swift in Sources */,
 				3ADEEEF32603B30300816B85 /* SquatchNotesApp.swift in Sources */,
+				3A1B204F260E8DD3006DA9D2 /* AddNoteButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -775,19 +769,6 @@
 			productName = FirebaseRemoteConfig;
 		};
 /* End XCSwiftPackageProductDependency section */
-
-/* Begin XCVersionGroup section */
-		3A1B1FDC260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				3A1B1FDD260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodel */,
-			);
-			currentVersion = 3A1B1FDD260D1893006DA9D2 /* SquatchNotesDataModel.xcdatamodel */;
-			path = SquatchNotesDataModel.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 3ADEEEDA2603B30100816B85 /* Project object */;
 }
