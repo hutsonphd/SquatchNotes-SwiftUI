@@ -15,15 +15,26 @@ struct SquatchNotesApp: App {
     init () {
         FirebaseApp.configure()
         UITableView.appearance().backgroundColor = UIColor.squatchBackground
-        UINavigationBar.appearance().backgroundColor = UIColor.squatchBackground
-        UINavigationBar.appearance().largeTitleTextAttributes = [
-            .foregroundColor: UIColor.squatchText,
-            .font : UIFont(name:"Cabin-Bold", size: 40)!
-        ]
-        UINavigationBar.appearance().titleTextAttributes = [
-            .foregroundColor: UIColor.squatchText,
-            .font : UIFont(name: "Cabin-Bold", size: 20)!
-        ]
+        let standard = UINavigationBarAppearance()
+        standard.configureWithTransparentBackground()
+        standard.backgroundColor = UIColor.squatchBackground
+        standard.titleTextAttributes = [.foregroundColor: UIColor.squatchText, .font : UIFont(name: "Cabin-Bold", size: 20)!]
+        standard.largeTitleTextAttributes = [.foregroundColor: UIColor.squatchText, .font : UIFont(name:"Cabin-Bold", size: 40)!]
+        
+        let button = UIBarButtonItemAppearance(style: .plain)
+        button.normal.titleTextAttributes = [.foregroundColor: UIColor.squatchText, .font : UIFont(name: "Cabin-Regular", size: 20)!]
+        standard.buttonAppearance = button
+        
+        let done = UIBarButtonItemAppearance(style: .done)
+        done.normal.titleTextAttributes = [.foregroundColor: UIColor.squatchText, .font : UIFont(name: "Cabin-Regular", size: 20)!]
+        standard.doneButtonAppearance = done
+        
+        
+        UINavigationBar.appearance().standardAppearance = standard
+        UINavigationBar.appearance().scrollEdgeAppearance = standard
+        
+        
+        
         
     }
     

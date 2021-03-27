@@ -6,11 +6,14 @@
 //
 
 import SwiftUI
+import SwiftDown
 
 struct NoteEditor: View {
     
+    @StateObject var myNote = NotesViewModel()
+    
     let note: Note
-    @State private var inputTitle = ""
+    @State private var inputTitle = "" 
     @State private var inputContent = ""
     @ObservedObject var noteData = NotesViewModel()
     
@@ -27,7 +30,7 @@ struct NoteEditor: View {
                         )
                         .font(.custom("Cabin-Regular", size: 32))
                         .foregroundColor(Color("Text"))
-                    TextEditor(text: $inputContent)
+                    SwiftDownEditor(text: $inputContent)
                         .font(.custom("Cabin-Regular", size: 18))
                         .foregroundColor(Color("Text"))
                     Spacer()
@@ -39,6 +42,7 @@ struct NoteEditor: View {
             .navigationBarTitle("", displayMode: .inline)
             .navigationBarItems(trailing: Button(action: {noteData.updateNote(id: note.id, title: self.inputTitle, content: self.inputContent)}, label: {
                 Text("Update")
+                    .font(.custom("Cabin-Regular", size: 20))
             }))
         }
     }
