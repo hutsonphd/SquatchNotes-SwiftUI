@@ -9,13 +9,17 @@ import SwiftUI
 
 struct AddNoteButton: View {
     
-    let notes = NotesViewModel()
+    let noteRepo = NoteRepository()
+    
+    @State var presentAddNewItem = false
+    
+    let newNote = Note(title: "Untitled Note", content: "", linkedNotes: [""], createdAt: Date(), updatedAt: Date())
     
     var body: some View {
         VStack {
-            Button(action: {notes.addNote()}, label: {
+            Button(action: {noteRepo.addNote(newNote)}, label: {
                     Image(systemName: "plus")
-                        .frame(width: 30, height: 30)
+                        .frame(width: 40   , height: 40)
                         .foregroundColor(Color("Text"))
             })
             .background(Color("Green"))

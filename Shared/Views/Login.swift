@@ -22,30 +22,30 @@ struct Login: View {
                     Login_Image()
                     VStack {
                         TextField("Email", text: $email)
-                        SecureField("Password",
-                                    text: $password,
-                                    onCommit: {sessionSession.signIn(email: email, password: password)})
-                        }
-                        .font(.custom("Cabin-Bold", size: 18))
-                        .foregroundColor(Color("Text"))
-                        .textFieldStyle(RoundedBorderTextFieldStyle())
-                        .padding()
-                        .padding(.horizontal)
-                        .autocapitalization(.none)
-                        .disableAutocorrection(true)
+//                        SecureField("Password",
+//                                    text: $password,
+//                                    onCommit: {sessionSession.signIn(email: email, password: password)})
+//                        }
+//                        .font(.custom("Cabin-Bold", size: 18))
+//                        .foregroundColor(Color("Text"))
+//                        .textFieldStyle(RoundedBorderTextFieldStyle())
+//                        .padding()
+//                        .padding(.horizontal)
+//                        .autocapitalization(.none)
+//                        .disableAutocorrection(true)
                     HStack {
                         Spacer()
-                        Button (action: {
-                            sessionSession.signIn(email: email, password: password)
-                        }, label: {
-                            logInButton()
-                        })
+//                        Button (action: {
+//                            sessionSession.signIn(email: email, password: password)
+//                        }, label: {
+//                            logInButton()
+//                        })
                         Spacer()
-                        Button (action: {
-                            sessionSession.signUp(email: email, password: password)
-                        }, label: {
-                            signUpButton()
-                        })
+//                        Button (action: {
+//                            sessionSession.signUp(email: email, password: password)
+//                        }, label: {
+//                            signUpButton()
+//                        })
                         Spacer()
                         }
                     .padding()
@@ -57,6 +57,7 @@ struct Login: View {
         }
         .navigationBarTitle("Welcome")
     }
+}
 }
 
 // MARK: - Login Image
@@ -103,6 +104,7 @@ struct logInButton: View {
         .cornerRadius(8)
     }
 }
+
 
 struct Login_Previews: PreviewProvider {
     static var previews: some View {

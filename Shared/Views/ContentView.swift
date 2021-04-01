@@ -6,42 +6,51 @@
 //
 
 import SwiftUI
-import UIKit
 
 struct ContentView: View {
 
-    @ObservedObject var sessionStore = SessionStore()
-    @ObservedObject var notes = NotesViewModel()
+//    @EnvironmentObject var session: SessionStore
+    @ObservedObject var noteRepo = NoteRepository()
+    @ObservedObject var session1 = SessionStore()
+    
+    func getUser() {
+        session1.listen()
+    }
+
     
     init() {
-        sessionStore.listen()
-        notes.getNotes()
+        noteRepo.loadData()
+//        session.listen()
     }
     
-    
+
     var body: some View {
-        NavigationView {
-            List {
-                ForEach(notes.notes) { note in
-                    NavigationLink(destination: NoteEditor(note: note), label: {
-                        NoteRow(note: note)
-                    })
-                    .listRowBackground(Color("Background"))
+        Group {
+            if (session1.session != nil) {
+                ZStack {
+                    VStack{
+                        NavigationView {
+                            NotesList()
+                                .navigationBarTitle("Notes")
+                                .navigationBarItems(trailing: HStack {
+                                    AddNoteButton()
+                                    SignOut()
+                                })
+                        }
+                    }
+                    .background(Color("Background"))
                 }
-                .onAppear(perform: notes.getNotes)
+                .edgesIgnoringSafeArea(.all)
+            } else {
+                AuthView()
             }
-            .navigationTitle("Notes")
-            .navigationBarItems(trailing: AddNoteButton().padding())
-        }
-        .fullScreenCover(isPresented: $sessionStore.isAnon, content: {
-            Login()
-        })
+        }.onAppear(perform: getUser)
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView().environmentObject(SessionStore())
             .preferredColorScheme(.dark)
     }
 }

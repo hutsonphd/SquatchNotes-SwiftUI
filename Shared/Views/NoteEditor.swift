@@ -6,16 +6,14 @@
 //
 
 import SwiftUI
-import SwiftDown
+import HighlightedTextEditor
 
 struct NoteEditor: View {
+
+    @ObservedObject var noteRepo = NoteRepository()
+    @ObservedObject var noteCellVM: NoteCellViewModel
     
-    @StateObject var myNote = NotesViewModel()
-    
-    let note: Note
-    @State private var inputTitle = "" 
-    @State private var inputContent = ""
-    @ObservedObject var noteData = NotesViewModel()
+    var onCommit: (Note) -> (Void) = { _ in }
     
     var body: some View {
         ZStack {
@@ -23,14 +21,14 @@ struct NoteEditor: View {
                 .ignoresSafeArea()
             HStack {
                 VStack (alignment: .leading, spacing: 10){
-                    TextField("\(note.title)",
-                              text: $inputTitle,
-                              onEditingChanged: {_ in print("changed")},
-                              onCommit: {noteData.updateNote(id: note.id, title: self.inputTitle, content: self.inputContent)}
+                    TextField("Add note title",
+                              text: $noteCellVM.note.title, onCommit: {self.onCommit(self.noteCellVM.note)}
                         )
                         .font(.custom("Cabin-Regular", size: 32))
                         .foregroundColor(Color("Text"))
-                    SwiftDownEditor(text: $inputContent)
+                    HighlightedTextEditor(text: $noteCellVM.note.content,
+                                          highlightRules: .markdown,
+                                          onCommit: {self.onCommit(self.noteCellVM.note)})
                         .font(.custom("Cabin-Regular", size: 18))
                         .foregroundColor(Color("Text"))
                     Spacer()
@@ -38,12 +36,8 @@ struct NoteEditor: View {
                 .foregroundColor(Color("Text"))
                 Spacer()
             }
+            .navigationBarTitleDisplayMode(.inline)
             .padding()
-            .navigationBarTitle("", displayMode: .inline)
-            .navigationBarItems(trailing: Button(action: {noteData.updateNote(id: note.id, title: self.inputTitle, content: self.inputContent)}, label: {
-                Text("Update")
-                    .font(.custom("Cabin-Regular", size: 20))
-            }))
         }
     }
 }

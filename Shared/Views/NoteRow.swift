@@ -9,14 +9,26 @@ import SwiftUI
 
 struct NoteRow: View {
     
-    let note: Note
+    @ObservedObject var noteCellVM: NoteCellViewModel
     
     var body: some View {
         VStack(alignment: .leading) {
-            Text(note.title)
+            Text(noteCellVM.note.title)
+//            Text("Untitled Note")
                 .font(.custom("Cabin-Bold", size: 24))
-            Text(note.updatedAtString)
+                .padding(.top, 4)
+            Text(noteCellVM.note.updatedAtString)
+//            Text("March 31, 2021 05:31")
                 .font(.custom("Cabin-Regular", size: 16))
+                .padding(.top, 10)
         }
     }
 }
+
+
+//struct NoteRow_Previews: PreviewProvider {
+//    static var previews: some View {
+//        NoteRow()
+//            .preferredColorScheme(.dark)
+//    }
+//}

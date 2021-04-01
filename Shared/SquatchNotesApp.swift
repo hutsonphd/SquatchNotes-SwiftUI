@@ -32,10 +32,6 @@ struct SquatchNotesApp: App {
         
         UINavigationBar.appearance().standardAppearance = standard
         UINavigationBar.appearance().scrollEdgeAppearance = standard
-        
-        
-        
-        
     }
     
     var body: some Scene {

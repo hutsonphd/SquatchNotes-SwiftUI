@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A16D6CF260F0678006A7DB1 /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16D6CE260F0678006A7DB1 /* NotesList.swift */; };
+		3A16D6D0260F0678006A7DB1 /* NotesList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16D6CE260F0678006A7DB1 /* NotesList.swift */; };
+		3A16D6D4260F0721006A7DB1 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16D6D3260F0721006A7DB1 /* SideMenu.swift */; };
+		3A16D6D5260F0721006A7DB1 /* SideMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16D6D3260F0721006A7DB1 /* SideMenu.swift */; };
+		3A16D6D9260F115A006A7DB1 /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16D6D8260F115A006A7DB1 /* SignOut.swift */; };
+		3A16D6DA260F115A006A7DB1 /* SignOut.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16D6D8260F115A006A7DB1 /* SignOut.swift */; };
+		3A16D6E8260F2E12006A7DB1 /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 3A16D6E7260F2E12006A7DB1 /* HighlightedTextEditor */; };
+		3A16D6EC260F2E28006A7DB1 /* HighlightedTextEditor in Frameworks */ = {isa = PBXBuildFile; productRef = 3A16D6EB260F2E28006A7DB1 /* HighlightedTextEditor */; };
+		3A16D6F0260F3C6E006A7DB1 /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16D6EF260F3C6E006A7DB1 /* NoteRepository.swift */; };
+		3A16D6F1260F3C6E006A7DB1 /* NoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A16D6EF260F3C6E006A7DB1 /* NoteRepository.swift */; };
 		3A1B2026260E4F87006DA9D2 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B2025260E4F87006DA9D2 /* User.swift */; };
 		3A1B2035260E5FD0006DA9D2 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B2034260E5FD0006DA9D2 /* UIColor.swift */; };
 		3A1B203F260E6FF0006DA9D2 /* NoteEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B203E260E6FEF006DA9D2 /* NoteEditor.swift */; };
@@ -17,11 +27,9 @@
 		3A1B204F260E8DD3006DA9D2 /* AddNoteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B204D260E8DD3006DA9D2 /* AddNoteButton.swift */; };
 		3A1B205C260E9368006DA9D2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B205B260E9368006DA9D2 /* Login.swift */; };
 		3A1B205D260E9368006DA9D2 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1B205B260E9368006DA9D2 /* Login.swift */; };
-		3A1B2062260EF9B0006DA9D2 /* SwiftDown in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B2061260EF9B0006DA9D2 /* SwiftDown */; };
 		3A1B2064260EF9B8006DA9D2 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B2063260EF9B8006DA9D2 /* FirebaseAuth */; };
 		3A1B2066260EF9BF006DA9D2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B2065260EF9BF006DA9D2 /* FirebaseFirestore */; };
 		3A1B2068260EF9C8006DA9D2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B2067260EF9C8006DA9D2 /* FirebaseFirestoreSwift-Beta */; };
-		3A1B206A260EF9DD006DA9D2 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B2069260EF9DD006DA9D2 /* FirebaseAnalytics */; };
 		3A1B206C260EF9E1006DA9D2 /* FirebaseAppDistribution-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B206B260EF9E1006DA9D2 /* FirebaseAppDistribution-Beta */; };
 		3A1B206E260EF9E5006DA9D2 /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B206D260EF9E5006DA9D2 /* FirebaseCrashlytics */; };
 		3A1B2070260EF9E9006DA9D2 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B206F260EF9E9006DA9D2 /* FirebaseDatabase */; };
@@ -57,7 +65,20 @@
 		3A5C8B61260A8AB200063EA5 /* Cabin-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B5E260A8AB200063EA5 /* Cabin-VariableFont_wdth,wght.ttf */; };
 		3A5C8B62260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B5F260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf */; };
 		3A5C8B63260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B5F260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf */; };
-		3A5C8B68260A8C0000063EA5 /* SwiftDown in Frameworks */ = {isa = PBXBuildFile; productRef = 3A5C8B67260A8C0000063EA5 /* SwiftDown */; };
+		3ABD4C452613FBFA00176438 /* DocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C442613FBFA00176438 /* DocumentViewModel.swift */; };
+		3ABD4C462613FBFA00176438 /* DocumentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C442613FBFA00176438 /* DocumentViewModel.swift */; };
+		3ABD4C4A2613FF3200176438 /* DocumentEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C492613FF3200176438 /* DocumentEditor.swift */; };
+		3ABD4C4B2613FF3200176438 /* DocumentEditor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C492613FF3200176438 /* DocumentEditor.swift */; };
+		3ABD4C89261506F800176438 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C88261506F800176438 /* NoteListViewModel.swift */; };
+		3ABD4C8A261506F800176438 /* NoteListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C88261506F800176438 /* NoteListViewModel.swift */; };
+		3ABD4C8E2615072F00176438 /* NoteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C8D2615072F00176438 /* NoteCellViewModel.swift */; };
+		3ABD4C8F2615072F00176438 /* NoteCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C8D2615072F00176438 /* NoteCellViewModel.swift */; };
+		3ABD4C9F261615C100176438 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C9E261615C000176438 /* AuthView.swift */; };
+		3ABD4CA0261615C100176438 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4C9E261615C000176438 /* AuthView.swift */; };
+		3ABD4CA62616235A00176438 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4CA52616235A00176438 /* SignInView.swift */; };
+		3ABD4CA72616235A00176438 /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4CA52616235A00176438 /* SignInView.swift */; };
+		3ABD4CAC2616245E00176438 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4CAB2616245E00176438 /* SignUpView.swift */; };
+		3ABD4CAD2616245E00176438 /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ABD4CAB2616245E00176438 /* SignUpView.swift */; };
 		3ADEEEF22603B30300816B85 /* SquatchNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */; };
 		3ADEEEF32603B30300816B85 /* SquatchNotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */; };
 		3ADEEEF42603B30300816B85 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ADEEEE02603B30100816B85 /* ContentView.swift */; };
@@ -71,7 +92,6 @@
 		3ADEEF3A2604058F00816B85 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF392604058F00816B85 /* FirebaseFirestoreSwift-Beta */; };
 		3ADEEF3C2604058F00816B85 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF3B2604058F00816B85 /* FirebaseStorage */; };
 		3ADEEF3E2604058F00816B85 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF3D2604058F00816B85 /* FirebaseAuth */; };
-		3ADEEF402604058F00816B85 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF3F2604058F00816B85 /* FirebaseAnalytics */; };
 		3ADEEF422604058F00816B85 /* FirebaseDynamicLinks in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF412604058F00816B85 /* FirebaseDynamicLinks */; };
 		3ADEEF442604058F00816B85 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF432604058F00816B85 /* FirebaseFirestore */; };
 		3ADEEF462604058F00816B85 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 3ADEEF452604058F00816B85 /* FirebaseDatabase */; };
@@ -87,6 +107,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A16D6CE260F0678006A7DB1 /* NotesList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotesList.swift; sourceTree = "<group>"; };
+		3A16D6D3260F0721006A7DB1 /* SideMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenu.swift; sourceTree = "<group>"; };
+		3A16D6D8260F115A006A7DB1 /* SignOut.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignOut.swift; sourceTree = "<group>"; };
+		3A16D6EF260F3C6E006A7DB1 /* NoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRepository.swift; sourceTree = "<group>"; };
 		3A1B2025260E4F87006DA9D2 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		3A1B2034260E5FD0006DA9D2 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		3A1B203E260E6FEF006DA9D2 /* NoteEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteEditor.swift; sourceTree = "<group>"; };
@@ -106,6 +130,13 @@
 		3A5C8B5E260A8AB200063EA5 /* Cabin-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
 		3A5C8B5F260A8AB200063EA5 /* Cabin-Italic-VariableFont_wdth,wght.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-Italic-VariableFont_wdth,wght.ttf"; sourceTree = "<group>"; };
 		3A80315E26047628007F0703 /* SquatchNotes.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SquatchNotes.entitlements; sourceTree = "<group>"; };
+		3ABD4C442613FBFA00176438 /* DocumentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentViewModel.swift; sourceTree = "<group>"; };
+		3ABD4C492613FF3200176438 /* DocumentEditor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentEditor.swift; sourceTree = "<group>"; };
+		3ABD4C88261506F800176438 /* NoteListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteListViewModel.swift; sourceTree = "<group>"; };
+		3ABD4C8D2615072F00176438 /* NoteCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCellViewModel.swift; sourceTree = "<group>"; };
+		3ABD4C9E261615C000176438 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		3ABD4CA52616235A00176438 /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
+		3ABD4CAB2616245E00176438 /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		3ADEEEDF2603B30100816B85 /* SquatchNotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatchNotesApp.swift; sourceTree = "<group>"; };
 		3ADEEEE02603B30100816B85 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3ADEEEE12603B30300816B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -126,15 +157,14 @@
 				3ADEEF362604058F00816B85 /* FirebaseMessaging in Frameworks */,
 				3ADEEF4C2604058F00816B85 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				3ADEEF382604058F00816B85 /* FirebaseStorageSwift-Beta in Frameworks */,
-				3ADEEF402604058F00816B85 /* FirebaseAnalytics in Frameworks */,
 				3ADEEF482604058F00816B85 /* FirebaseFunctions in Frameworks */,
+				3A16D6E8260F2E12006A7DB1 /* HighlightedTextEditor in Frameworks */,
 				3ADEEF442604058F00816B85 /* FirebaseFirestore in Frameworks */,
 				3ADEEF3A2604058F00816B85 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				3ADEEF502604058F00816B85 /* FirebaseRemoteConfig in Frameworks */,
 				3ADEEF322604058F00816B85 /* FirebaseAppDistribution-Beta in Frameworks */,
 				3ADEEF422604058F00816B85 /* FirebaseDynamicLinks in Frameworks */,
 				3ADEEF342604058F00816B85 /* FirebaseInstallations in Frameworks */,
-				3A5C8B68260A8C0000063EA5 /* SwiftDown in Frameworks */,
 				3ADEEF4A2604058F00816B85 /* FirebaseCrashlytics in Frameworks */,
 				3ADEEF462604058F00816B85 /* FirebaseDatabase in Frameworks */,
 				3ADEEF4E2604058F00816B85 /* FirebaseMLModelDownloader in Frameworks */,
@@ -147,14 +177,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A1B2062260EF9B0006DA9D2 /* SwiftDown in Frameworks */,
 				3A1B2068260EF9C8006DA9D2 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				3A1B2082260EFA1C006DA9D2 /* FirebaseStorageSwift-Beta in Frameworks */,
 				3A1B2064260EF9B8006DA9D2 /* FirebaseAuth in Frameworks */,
 				3A1B2078260EFA00006DA9D2 /* FirebaseInstallations in Frameworks */,
 				3A1B206E260EF9E5006DA9D2 /* FirebaseCrashlytics in Frameworks */,
+				3A16D6EC260F2E28006A7DB1 /* HighlightedTextEditor in Frameworks */,
 				3A1B2080260EFA17006DA9D2 /* FirebaseStorage in Frameworks */,
-				3A1B206A260EF9DD006DA9D2 /* FirebaseAnalytics in Frameworks */,
 				3A1B2072260EF9F0006DA9D2 /* FirebaseDynamicLinks in Frameworks */,
 				3A1B2076260EF9FB006DA9D2 /* FirebaseInAppMessaging-Beta in Frameworks */,
 				3A1B207A260EFA05006DA9D2 /* FirebaseMessaging in Frameworks */,
@@ -182,6 +211,8 @@
 		3A1B202F260E50CE006DA9D2 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				3ABD4C88261506F800176438 /* NoteListViewModel.swift */,
+				3ABD4C8D2615072F00176438 /* NoteCellViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -211,6 +242,25 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		3ABD4C922615186F00176438 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD4C442613FBFA00176438 /* DocumentViewModel.swift */,
+				3A16D6EF260F3C6E006A7DB1 /* NoteRepository.swift */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		3ABD4CAA261623E900176438 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3ABD4CA52616235A00176438 /* SignInView.swift */,
+				3ABD4C9E261615C000176438 /* AuthView.swift */,
+				3ABD4CAB2616245E00176438 /* SignUpView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 		3ADEEED92603B30100816B85 = {
 			isa = PBXGroup;
 			children = (
@@ -226,6 +276,7 @@
 		3ADEEEDE2603B30100816B85 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				3ABD4C922615186F00176438 /* Repository */,
 				3A1B202F260E50CE006DA9D2 /* ViewModels */,
 				3A1B1FE2260D1A64006DA9D2 /* Models */,
 				3A5C8B13260A84A900063EA5 /* Fonts */,
@@ -267,11 +318,16 @@
 		3ADEEF032603B31700816B85 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				3ABD4CAA261623E900176438 /* Authentication */,
 				3ADEEEE02603B30100816B85 /* ContentView.swift */,
 				3A1B203E260E6FEF006DA9D2 /* NoteEditor.swift */,
 				3A1B2043260E71CC006DA9D2 /* NoteRow.swift */,
 				3A1B204D260E8DD3006DA9D2 /* AddNoteButton.swift */,
 				3A1B205B260E9368006DA9D2 /* Login.swift */,
+				3A16D6CE260F0678006A7DB1 /* NotesList.swift */,
+				3A16D6D8260F115A006A7DB1 /* SignOut.swift */,
+				3A16D6D3260F0721006A7DB1 /* SideMenu.swift */,
+				3ABD4C492613FF3200176438 /* DocumentEditor.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -309,7 +365,6 @@
 				3ADEEF392604058F00816B85 /* FirebaseFirestoreSwift-Beta */,
 				3ADEEF3B2604058F00816B85 /* FirebaseStorage */,
 				3ADEEF3D2604058F00816B85 /* FirebaseAuth */,
-				3ADEEF3F2604058F00816B85 /* FirebaseAnalytics */,
 				3ADEEF412604058F00816B85 /* FirebaseDynamicLinks */,
 				3ADEEF432604058F00816B85 /* FirebaseFirestore */,
 				3ADEEF452604058F00816B85 /* FirebaseDatabase */,
@@ -318,7 +373,7 @@
 				3ADEEF4B2604058F00816B85 /* FirebaseInAppMessaging-Beta */,
 				3ADEEF4D2604058F00816B85 /* FirebaseMLModelDownloader */,
 				3ADEEF4F2604058F00816B85 /* FirebaseRemoteConfig */,
-				3A5C8B67260A8C0000063EA5 /* SwiftDown */,
+				3A16D6E7260F2E12006A7DB1 /* HighlightedTextEditor */,
 			);
 			productName = "SquatchNotes (iOS)";
 			productReference = 3ADEEEE62603B30300816B85 /* SquatchNotes.app */;
@@ -338,11 +393,9 @@
 			);
 			name = "SquatchNotes (macOS)";
 			packageProductDependencies = (
-				3A1B2061260EF9B0006DA9D2 /* SwiftDown */,
 				3A1B2063260EF9B8006DA9D2 /* FirebaseAuth */,
 				3A1B2065260EF9BF006DA9D2 /* FirebaseFirestore */,
 				3A1B2067260EF9C8006DA9D2 /* FirebaseFirestoreSwift-Beta */,
-				3A1B2069260EF9DD006DA9D2 /* FirebaseAnalytics */,
 				3A1B206B260EF9E1006DA9D2 /* FirebaseAppDistribution-Beta */,
 				3A1B206D260EF9E5006DA9D2 /* FirebaseCrashlytics */,
 				3A1B206F260EF9E9006DA9D2 /* FirebaseDatabase */,
@@ -355,6 +408,7 @@
 				3A1B207D260EFA12006DA9D2 /* FirebaseRemoteConfig */,
 				3A1B207F260EFA17006DA9D2 /* FirebaseStorage */,
 				3A1B2081260EFA1C006DA9D2 /* FirebaseStorageSwift-Beta */,
+				3A16D6EB260F2E28006A7DB1 /* HighlightedTextEditor */,
 			);
 			productName = "SquatchNotes (macOS)";
 			productReference = 3ADEEEEE2603B30300816B85 /* SquatchNotes.app */;
@@ -388,7 +442,7 @@
 			mainGroup = 3ADEEED92603B30100816B85;
 			packageReferences = (
 				3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
-				3A5C8B66260A8C0000063EA5 /* XCRemoteSwiftPackageReference "SwiftDown" */,
+				3A16D6E6260F2E12006A7DB1 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */,
 			);
 			productRefGroup = 3ADEEEE72603B30300816B85 /* Products */;
 			projectDirPath = "";
@@ -448,13 +502,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABD4C8E2615072F00176438 /* NoteCellViewModel.swift in Sources */,
+				3A16D6F0260F3C6E006A7DB1 /* NoteRepository.swift in Sources */,
+				3A16D6D9260F115A006A7DB1 /* SignOut.swift in Sources */,
 				3ADEEEF42603B30300816B85 /* ContentView.swift in Sources */,
+				3A16D6CF260F0678006A7DB1 /* NotesList.swift in Sources */,
 				3A1B205C260E9368006DA9D2 /* Login.swift in Sources */,
+				3ABD4C9F261615C100176438 /* AuthView.swift in Sources */,
+				3ABD4CA62616235A00176438 /* SignInView.swift in Sources */,
+				3ABD4C4A2613FF3200176438 /* DocumentEditor.swift in Sources */,
+				3A16D6D4260F0721006A7DB1 /* SideMenu.swift in Sources */,
+				3ABD4CAC2616245E00176438 /* SignUpView.swift in Sources */,
+				3ABD4C89261506F800176438 /* NoteListViewModel.swift in Sources */,
 				3A1B2035260E5FD0006DA9D2 /* UIColor.swift in Sources */,
 				3A22E4BF26074DB30094CF60 /* Note.swift in Sources */,
 				3A1B203F260E6FF0006DA9D2 /* NoteEditor.swift in Sources */,
 				3A1B204E260E8DD3006DA9D2 /* AddNoteButton.swift in Sources */,
 				3ADEEF66260449BE00816B85 /* SessionStore.swift in Sources */,
+				3ABD4C452613FBFA00176438 /* DocumentViewModel.swift in Sources */,
 				3A1B2026260E4F87006DA9D2 /* User.swift in Sources */,
 				3A1B2044260E71CC006DA9D2 /* NoteRow.swift in Sources */,
 				3ADEEEF22603B30300816B85 /* SquatchNotesApp.swift in Sources */,
@@ -465,13 +530,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ABD4C8F2615072F00176438 /* NoteCellViewModel.swift in Sources */,
 				3A1B205D260E9368006DA9D2 /* Login.swift in Sources */,
+				3ABD4CA72616235A00176438 /* SignInView.swift in Sources */,
+				3A16D6DA260F115A006A7DB1 /* SignOut.swift in Sources */,
+				3A16D6F1260F3C6E006A7DB1 /* NoteRepository.swift in Sources */,
 				3A1B2045260E71CC006DA9D2 /* NoteRow.swift in Sources */,
 				3A1B2040260E6FF0006DA9D2 /* NoteEditor.swift in Sources */,
+				3ABD4C462613FBFA00176438 /* DocumentViewModel.swift in Sources */,
+				3A16D6D5260F0721006A7DB1 /* SideMenu.swift in Sources */,
 				3ADEEEF52603B30300816B85 /* ContentView.swift in Sources */,
 				3ADEEF67260449BE00816B85 /* SessionStore.swift in Sources */,
 				3ADEEEF32603B30300816B85 /* SquatchNotesApp.swift in Sources */,
+				3ABD4C4B2613FF3200176438 /* DocumentEditor.swift in Sources */,
 				3A1B204F260E8DD3006DA9D2 /* AddNoteButton.swift in Sources */,
+				3ABD4CA0261615C100176438 /* AuthView.swift in Sources */,
+				3ABD4C8A261506F800176438 /* NoteListViewModel.swift in Sources */,
+				3ABD4CAD2616245E00176438 /* SignUpView.swift in Sources */,
+				3A16D6D0260F0678006A7DB1 /* NotesList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -725,12 +801,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		3A5C8B66260A8C0000063EA5 /* XCRemoteSwiftPackageReference "SwiftDown" */ = {
+		3A16D6E6260F2E12006A7DB1 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/qeude/SwiftDown";
+			repositoryURL = "https://github.com/kyle-n/HighlightedTextEditor";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.1.6;
+				minimumVersion = 1.7.0;
 			};
 		};
 		3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
@@ -744,10 +820,15 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		3A1B2061260EF9B0006DA9D2 /* SwiftDown */ = {
+		3A16D6E7260F2E12006A7DB1 /* HighlightedTextEditor */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 3A5C8B66260A8C0000063EA5 /* XCRemoteSwiftPackageReference "SwiftDown" */;
-			productName = SwiftDown;
+			package = 3A16D6E6260F2E12006A7DB1 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */;
+			productName = HighlightedTextEditor;
+		};
+		3A16D6EB260F2E28006A7DB1 /* HighlightedTextEditor */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A16D6E6260F2E12006A7DB1 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */;
+			productName = HighlightedTextEditor;
 		};
 		3A1B2063260EF9B8006DA9D2 /* FirebaseAuth */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -763,11 +844,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseFirestoreSwift-Beta";
-		};
-		3A1B2069260EF9DD006DA9D2 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
 		};
 		3A1B206B260EF9E1006DA9D2 /* FirebaseAppDistribution-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -829,11 +905,6 @@
 			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseStorageSwift-Beta";
 		};
-		3A5C8B67260A8C0000063EA5 /* SwiftDown */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3A5C8B66260A8C0000063EA5 /* XCRemoteSwiftPackageReference "SwiftDown" */;
-			productName = SwiftDown;
-		};
 		3ADEEF312604058F00816B85 /* FirebaseAppDistribution-Beta */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
@@ -868,11 +939,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseAuth;
-		};
-		3ADEEF3F2604058F00816B85 /* FirebaseAnalytics */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
-			productName = FirebaseAnalytics;
 		};
 		3ADEEF412604058F00816B85 /* FirebaseDynamicLinks */ = {
 			isa = XCSwiftPackageProductDependency;
