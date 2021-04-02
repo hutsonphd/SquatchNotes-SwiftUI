@@ -44,16 +44,16 @@ struct SignInView: View {
             
             VStack(spacing: 18) {
                 TextField("Email address", text: $email)
-                    .font(.custom("Cabin-Regular", size: 14))
+                    .font(.custom("Cabin-Regular", size: 18))
                     .padding(12)
                     .autocapitalization(.none)
-                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray), lineWidth: 1))
+                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("Green"), lineWidth: 1))
                 
                 SecureField("Password", text: $password, onCommit: {signIn()})
-                    .font(.custom("Cabin-Regular", size: 14))
+                    .font(.custom("Cabin-Regular", size: 18))
                     .padding(12)
                     .autocapitalization(.none)
-                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray), lineWidth: 1))
+                    .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("Green"), lineWidth: 1))
             }
             .padding(.vertical, 30)
             
@@ -62,7 +62,7 @@ struct SignInView: View {
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .frame(height: 50)
                     .foregroundColor(.white)
-                    .font(.custom("Cabin-Bold", size: 14))
+                    .font(.custom("Cabin-Bold", size: 18))
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Green"), Color("Blue")]), startPoint: .leading, endPoint: .trailing))
                     .cornerRadius(5)
             }
@@ -99,6 +99,8 @@ struct SignInView: View {
 
 struct SignIn_Previews: PreviewProvider {
     static var previews: some View {
-        SignInView().environmentObject(SessionStore())
+        SignInView()
+            .environmentObject(SessionStore())
+            .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
     }
 }

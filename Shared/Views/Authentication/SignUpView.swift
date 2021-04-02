@@ -36,13 +36,13 @@ struct SignUpView: View {
             
             VStack(spacing: 18) {
                 TextField("Email address", text: $email)
-                    .font(.custom("Cabin-Regular", size: 14))
+                    .font(.custom("Cabin-Regular", size: 18))
                     .padding(12)
                     .autocapitalization(.none)
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("Green"), lineWidth: 1))
                 
                 SecureField("Password", text: $password)
-                    .font(.custom("Cabin-Regular", size: 14))
+                    .font(.custom("Cabin-Regular", size: 18))
                     .padding(12)
                     .autocapitalization(.none)
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("Green"), lineWidth: 1))
@@ -54,14 +54,14 @@ struct SignUpView: View {
                     .frame(minWidth: 0, maxWidth: .infinity)
                     .frame(height: 50)
                     .foregroundColor(Color(.white))
-                    .font(.custom("Cabin-Bold", size: 14))
+                    .font(.custom("Cabin-Bold", size: 18))
                     .background(LinearGradient(gradient: Gradient(colors: [Color("Green"), Color("Blue")]), startPoint: .leading, endPoint: .trailing))
                     .cornerRadius(5)
             }
             
             if (error != "") {
                 Text(error)
-                    .font(.custom("Cabin-Medium", size: 14))
+                    .font(.custom("Cabin-Medium", size: 18))
                     .foregroundColor(Color("Red"))
                     .padding()
             }
@@ -80,5 +80,6 @@ struct SignUpView: View {
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
         SignUpView().environmentObject(SessionStore())
+            .preferredColorScheme(/*@START_MENU_TOKEN@*/.dark/*@END_MENU_TOKEN@*/)
     }
 }

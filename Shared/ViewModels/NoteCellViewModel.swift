@@ -31,7 +31,7 @@ class NoteCellViewModel: ObservableObject, Identifiable {
         
     $note
         .dropFirst()
-        .debounce(for: 0.8, scheduler: RunLoop.main)
+        .debounce(for: 0.5, scheduler: RunLoop.main)
         .sink { note in
             self.noteRepo.updateNote(note)
         }

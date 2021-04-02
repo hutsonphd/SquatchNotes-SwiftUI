@@ -27,6 +27,8 @@
 		3A1B2066260EF9BF006DA9D2 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B2065260EF9BF006DA9D2 /* FirebaseFirestore */; };
 		3A1B2068260EF9C8006DA9D2 /* FirebaseFirestoreSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1B2067260EF9C8006DA9D2 /* FirebaseFirestoreSwift-Beta */; };
 		3A1DFADE2617983F004E35BD /* SquatchMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DFADD2617983F004E35BD /* SquatchMD.swift */; };
+		3A1DFAE92617B455004E35BD /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1DFAE82617B455004E35BD /* SwiftUIX */; };
+		3A1DFAEF2617B462004E35BD /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1DFAEE2617B462004E35BD /* SwiftUIX */; };
 		3A22E4BF26074DB30094CF60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4BE26074DB30094CF60 /* Note.swift */; };
 		3A5C8B0F260A839600063EA5 /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B0E260A839600063EA5 /* ArchitectsDaughter-Regular.ttf */; };
 		3A5C8B10260A839600063EA5 /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B0E260A839600063EA5 /* ArchitectsDaughter-Regular.ttf */; };
@@ -123,6 +125,7 @@
 				3A16D6E8260F2E12006A7DB1 /* HighlightedTextEditor in Frameworks */,
 				3ADEEF442604058F00816B85 /* FirebaseFirestore in Frameworks */,
 				3ADEEF3A2604058F00816B85 /* FirebaseFirestoreSwift-Beta in Frameworks */,
+				3A1DFAE92617B455004E35BD /* SwiftUIX in Frameworks */,
 				3ADEEF3E2604058F00816B85 /* FirebaseAuth in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -134,6 +137,7 @@
 				3A1B2068260EF9C8006DA9D2 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				3A1B2064260EF9B8006DA9D2 /* FirebaseAuth in Frameworks */,
 				3A16D6EC260F2E28006A7DB1 /* HighlightedTextEditor in Frameworks */,
+				3A1DFAEF2617B462004E35BD /* SwiftUIX in Frameworks */,
 				3A1B2066260EF9BF006DA9D2 /* FirebaseFirestore in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,6 +305,7 @@
 				3ADEEF3D2604058F00816B85 /* FirebaseAuth */,
 				3ADEEF432604058F00816B85 /* FirebaseFirestore */,
 				3A16D6E7260F2E12006A7DB1 /* HighlightedTextEditor */,
+				3A1DFAE82617B455004E35BD /* SwiftUIX */,
 			);
 			productName = "SquatchNotes (iOS)";
 			productReference = 3ADEEEE62603B30300816B85 /* SquatchNotes.app */;
@@ -324,6 +329,7 @@
 				3A1B2065260EF9BF006DA9D2 /* FirebaseFirestore */,
 				3A1B2067260EF9C8006DA9D2 /* FirebaseFirestoreSwift-Beta */,
 				3A16D6EB260F2E28006A7DB1 /* HighlightedTextEditor */,
+				3A1DFAEE2617B462004E35BD /* SwiftUIX */,
 			);
 			productName = "SquatchNotes (macOS)";
 			productReference = 3ADEEEEE2603B30300816B85 /* SquatchNotes.app */;
@@ -358,6 +364,7 @@
 			packageReferences = (
 				3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
 				3A16D6E6260F2E12006A7DB1 /* XCRemoteSwiftPackageReference "HighlightedTextEditor" */,
+				3A1DFAE72617B455004E35BD /* XCRemoteSwiftPackageReference "SwiftUIX" */,
 			);
 			productRefGroup = 3ADEEEE72603B30300816B85 /* Products */;
 			projectDirPath = "";
@@ -585,7 +592,7 @@
 				CODE_SIGN_ENTITLEMENTS = SquatchNotes.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = M9Z3N2R97A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -614,7 +621,7 @@
 				CODE_SIGN_ENTITLEMENTS = SquatchNotes.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEVELOPMENT_TEAM = M9Z3N2R97A;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = iOS/Info.plist;
@@ -725,6 +732,14 @@
 				minimumVersion = 1.7.0;
 			};
 		};
+		3A1DFAE72617B455004E35BD /* XCRemoteSwiftPackageReference "SwiftUIX" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/swiftuix/SwiftUIX";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
 		3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
@@ -760,6 +775,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = "FirebaseFirestoreSwift-Beta";
+		};
+		3A1DFAE82617B455004E35BD /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A1DFAE72617B455004E35BD /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
+		};
+		3A1DFAEE2617B462004E35BD /* SwiftUIX */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3A1DFAE72617B455004E35BD /* XCRemoteSwiftPackageReference "SwiftUIX" */;
+			productName = SwiftUIX;
 		};
 		3ADEEF392604058F00816B85 /* FirebaseFirestoreSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;

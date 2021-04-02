@@ -41,10 +41,10 @@ let secondaryBackground = NSColor.windowBackgroundColor
 let lighterColor = NSColor.lightGray
 let textColor = NSColor.labelColor
 #else
-let codeFont = UIFont.monospacedSystemFont(ofSize: UIFont.systemFontSize, weight: .thin)
-let heading1Font = UIFont(name: "Cabin-Bold", size: 24)
-let heading2Font = UIFont(name: "Cabin-Bold", size: 20)
-let heading3Font = UIFont(name: "Cabin-Bold", size: 18)
+let codeFont = UIFont.monospacedSystemFont(ofSize: 18, weight: .regular)
+let heading1Font = UIFont(name: "Cabin-Bold", size: 32)
+let heading2Font = UIFont(name: "Cabin-Bold", size: 26)
+let heading3Font = UIFont(name: "Cabin-Bold", size: 22)
 let headingTraits: UIFontDescriptor.SymbolicTraits = [.traitBold, .traitExpanded]
 let boldTraits: UIFontDescriptor.SymbolicTraits = [.traitBold]
 let emphasisTraits: UIFontDescriptor.SymbolicTraits = [.traitItalic]

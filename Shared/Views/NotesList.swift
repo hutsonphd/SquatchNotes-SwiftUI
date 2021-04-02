@@ -6,12 +6,14 @@
 //
 
 import SwiftUI
+import SwiftUIX
+import FirebaseFirestore
 
 struct NotesList: View {
     
     @ObservedObject var noteListVM = NoteListViewModel()
+    @ObservedObject var noteRepo = NoteRepository()
     
-
     
 //    init() {
 //        noteListVM.noteRepo.getNotes()
@@ -19,18 +21,32 @@ struct NotesList: View {
 //
 //    let notes = testDataNotes
 //
-    var body: some View {        
+    var body: some View {
         List {
             ForEach(noteListVM.noteCellViewModels) { noteCellVM in
                 NavigationLink(
                     destination: NoteEditor(noteCellVM: noteCellVM),
                     label: {
                         NoteRow(noteCellVM: noteCellVM)
-                            .padding()
                     })
-                .listRowBackground(Color("Background"))
+                    .listRowBackground(Color("Background"))
             }
-            .onDelete(perform: noteListVM.noteRepo.deleteNoteList)
+            .onDelete(perform: deleteNote)
+        }
+        .background(Color("Background"))
+    }
+    
+    private func deleteNote(at indexSet: IndexSet) {
+        indexSet.forEach { index in
+            let note = noteListVM.noteRepo.notes[index]
+            let db = Firestore.firestore()
+            db.collection("notes").document(note.id!).delete() { err in
+                if let err = err {
+                    print("Error removing document: \(err)")
+                } else {
+                    noteRepo.getNotes()
+                }
+            }
         }
     }
 }

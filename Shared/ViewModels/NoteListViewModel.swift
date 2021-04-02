@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-class NoteListViewModel: ObservableObject {
+class NoteListViewModel: ObservableObject, Identifiable {
     
     @Published var noteRepo = NoteRepository()
     @Published var noteCellViewModels = [NoteCellViewModel]()
@@ -16,7 +16,7 @@ class NoteListViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     init() {
-        noteRepo.getNotes()
+        noteRepo.loadData()
         noteRepo.$notes
             .map { notes in
                 notes.map { note in

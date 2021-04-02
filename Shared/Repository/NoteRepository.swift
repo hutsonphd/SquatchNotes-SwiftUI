@@ -94,7 +94,7 @@ class NoteRepository: ObservableObject {
                 if let err = err {
                     print("Error removing document: \(err)")
                 } else {
-                    self.getNotes()
+                    self.loadData()
                 }
             }
         }

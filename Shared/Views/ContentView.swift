@@ -7,10 +7,12 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
 
 //    @EnvironmentObject var session: SessionStore
     @ObservedObject var noteRepo = NoteRepository()
+    @ObservedObject var noteListVM = NoteListViewModel()
     @ObservedObject var session = SessionStore()
     
     func getUser() {
@@ -27,6 +29,7 @@ struct ContentView: View {
         Group {
             if (session.session != nil) {
                 ZStack {
+                    Color("Background")
                     VStack{
                         NavigationView {
                             NotesList()
@@ -37,9 +40,7 @@ struct ContentView: View {
                                 })
                         }
                     }
-                    .background(Color("Background"))
                 }
-                .edgesIgnoringSafeArea(.all)
             } else {
                 AuthView()
             }

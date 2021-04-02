@@ -30,7 +30,7 @@ struct NoteEditor: View {
                                           highlightRules: .SquatchMarkdown,
                                           onCommit: {self.onCommit(self.noteCellVM.note)
                                           })
-                        .defaultFont(UIFont(name: "Cabin-Regular", size: 14)!)
+                        .defaultFont(UIFont(name: "Cabin-Regular", size: 18)!)
                         .foregroundColor(Color("Text"))
                     Spacer()
                 }
