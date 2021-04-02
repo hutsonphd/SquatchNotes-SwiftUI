@@ -5,9 +5,14 @@
 //  Created by Hutson on 3/18/21.
 //
 
+#if os(macOS)
+import SwiftUI
+import Firebase
+#else
 import SwiftUI
 import Firebase
 import UIKit
+#endif
 
 @main
 struct SquatchNotesApp: App {

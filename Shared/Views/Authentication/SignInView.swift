@@ -49,7 +49,7 @@ struct SignInView: View {
                     .autocapitalization(.none)
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color(.gray), lineWidth: 1))
                 
-                SecureField("Password", text: $password)
+                SecureField("Password", text: $password, onCommit: {signIn()})
                     .font(.custom("Cabin-Regular", size: 14))
                     .padding(12)
                     .autocapitalization(.none)

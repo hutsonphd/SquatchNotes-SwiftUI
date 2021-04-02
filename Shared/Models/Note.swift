@@ -19,13 +19,13 @@ struct Note: Identifiable, Codable {
     var createdAt: Date
     var createdAtString: String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM dd, YYYY hh:mm"
+        formatter.dateFormat = "MMMM dd, YYYY h:mm a"
         return formatter.string(from: createdAt)
     }
     var updatedAt: Date
     var updatedAtString: String {
         let formatter = DateFormatter()
-        formatter.dateFormat = "MMMM dd, YYYY hh:mm"
+        formatter.dateFormat = "MMMM dd, YYYY h:mm a"
         return formatter.string(from: updatedAt)
     }
 }

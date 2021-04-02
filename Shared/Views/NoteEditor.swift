@@ -27,13 +27,13 @@ struct NoteEditor: View {
                         .font(.custom("Cabin-Regular", size: 32))
                         .foregroundColor(Color("Text"))
                     HighlightedTextEditor(text: $noteCellVM.note.content,
-                                          highlightRules: .markdown,
-                                          onCommit: {self.onCommit(self.noteCellVM.note)})
-                        .font(.custom("Cabin-Regular", size: 18))
+                                          highlightRules: .SquatchMarkdown,
+                                          onCommit: {self.onCommit(self.noteCellVM.note)
+                                          })
+                        .defaultFont(UIFont(name: "Cabin-Regular", size: 14)!)
                         .foregroundColor(Color("Text"))
                     Spacer()
                 }
-                .foregroundColor(Color("Text"))
                 Spacer()
             }
             .navigationBarTitleDisplayMode(.inline)

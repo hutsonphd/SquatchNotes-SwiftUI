@@ -14,7 +14,7 @@ struct SignUpView: View {
     @ObservedObject var session = SessionStore()
     
     func signUp() {
-        session.signIn(email: email, password: password) { (result, error) in
+        session.signUp(email: email, password: password) { (result, error) in
             if let error = error {
                 self.error = error.localizedDescription
             } else {
