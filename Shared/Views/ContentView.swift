@@ -20,7 +20,6 @@ struct ContentView: View {
     
     init() {
         noteRepo.loadData()
-//        session.listen()
     }
     
 
@@ -45,9 +44,6 @@ struct ContentView: View {
                 AuthView()
             }
         }.onAppear(perform: getUser)
-        .fullScreenCover(isPresented: /*@START_MENU_TOKEN@*/.constant(true)/*@END_MENU_TOKEN@*/, content: {
-            AuthView()
-        })
     }
 }
 

@@ -87,19 +87,6 @@ class NoteRepository: ObservableObject {
         }
     }
     
-    
-    func deleteNote(_ note: Note) {
-        if let noteID = note.id {
-            db.collection("notes").document(noteID).delete() { err in
-                if let err = err {
-                    print("Error removing document: \(err)")
-                } else {
-                    print("Document successfully removed!")
-                }
-            }
-        }
-    }
-    
     func deleteNoteList(at indexSet: IndexSet) {
         indexSet.forEach { index in
             let note = notes[index]

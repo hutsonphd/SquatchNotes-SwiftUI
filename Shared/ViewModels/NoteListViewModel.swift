@@ -29,7 +29,5 @@ class NoteListViewModel: ObservableObject {
     
     func addNote(note: Note) {
         noteRepo.addNote(note)
-//        let noteVM = NoteCellViewModel(note: note)
-//        self.noteCellViewModels.append(noteVM)
     }
 }
