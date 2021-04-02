@@ -38,11 +38,13 @@ struct SignUpView: View {
                 TextField("Email address", text: $email)
                     .font(.custom("Cabin-Regular", size: 14))
                     .padding(12)
+                    .autocapitalization(.none)
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("Green"), lineWidth: 1))
                 
                 SecureField("Password", text: $password)
                     .font(.custom("Cabin-Regular", size: 14))
                     .padding(12)
+                    .autocapitalization(.none)
                     .background(RoundedRectangle(cornerRadius: 5).strokeBorder(Color("Green"), lineWidth: 1))
             }
             .padding(.vertical, 64)

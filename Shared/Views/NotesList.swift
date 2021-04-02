@@ -11,12 +11,14 @@ struct NotesList: View {
     
     @ObservedObject var noteListVM = NoteListViewModel()
     
-    init() {
-        noteListVM.noteRepo.getNotes()
-    }
+
     
-    let notes = testDataNotes
-    
+//    init() {
+//        noteListVM.noteRepo.getNotes()
+//    }
+//
+//    let notes = testDataNotes
+//
     var body: some View {        
         List {
             ForEach(noteListVM.noteCellViewModels) { noteCellVM in
@@ -28,6 +30,7 @@ struct NotesList: View {
                     })
                 .listRowBackground(Color("Background"))
             }
+            .onDelete(perform: noteListVM.noteRepo.deleteNoteList)
         }
     }
 }

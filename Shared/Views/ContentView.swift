@@ -11,10 +11,10 @@ struct ContentView: View {
 
 //    @EnvironmentObject var session: SessionStore
     @ObservedObject var noteRepo = NoteRepository()
-    @ObservedObject var session1 = SessionStore()
+    @ObservedObject var session = SessionStore()
     
     func getUser() {
-        session1.listen()
+        session.listen()
     }
 
     
@@ -26,7 +26,7 @@ struct ContentView: View {
 
     var body: some View {
         Group {
-            if (session1.session != nil) {
+            if (session.session != nil) {
                 ZStack {
                     VStack{
                         NavigationView {
@@ -45,6 +45,9 @@ struct ContentView: View {
                 AuthView()
             }
         }.onAppear(perform: getUser)
+        .fullScreenCover(isPresented: /*@START_MENU_TOKEN@*/.constant(true)/*@END_MENU_TOKEN@*/, content: {
+            AuthView()
+        })
     }
 }
 

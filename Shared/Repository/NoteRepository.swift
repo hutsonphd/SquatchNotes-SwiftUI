@@ -97,7 +97,19 @@ class NoteRepository: ObservableObject {
                     print("Document successfully removed!")
                 }
             }
-            
+        }
+    }
+    
+    func deleteNoteList(at indexSet: IndexSet) {
+        indexSet.forEach { index in
+            let note = notes[index]
+            db.collection("notes").document(note.id!).delete() { err in
+                if let err = err {
+                    print("Error removing document: \(err)")
+                } else {
+                    self.getNotes()
+                }
+            }
         }
     }
 }
