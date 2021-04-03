@@ -29,6 +29,12 @@
 		3A1DFADE2617983F004E35BD /* SquatchMD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DFADD2617983F004E35BD /* SquatchMD.swift */; };
 		3A1DFAE92617B455004E35BD /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1DFAE82617B455004E35BD /* SwiftUIX */; };
 		3A1DFAEF2617B462004E35BD /* SwiftUIX in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1DFAEE2617B462004E35BD /* SwiftUIX */; };
+		3A1DFAF52619168E004E35BD /* DocumentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DFAF42619168E004E35BD /* DocumentRepository.swift */; };
+		3A1DFAF62619168E004E35BD /* DocumentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A1DFAF42619168E004E35BD /* DocumentRepository.swift */; };
+		3A1DFAFA261916B4004E35BD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1DFAF9261916B4004E35BD /* FirebaseStorage */; };
+		3A1DFAFC261916B4004E35BD /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1DFAFB261916B4004E35BD /* FirebaseStorageSwift-Beta */; };
+		3A1DFAFE261916BE004E35BD /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1DFAFD261916BE004E35BD /* FirebaseStorage */; };
+		3A1DFB00261916BE004E35BD /* FirebaseStorageSwift-Beta in Frameworks */ = {isa = PBXBuildFile; productRef = 3A1DFAFF261916BE004E35BD /* FirebaseStorageSwift-Beta */; };
 		3A22E4BF26074DB30094CF60 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A22E4BE26074DB30094CF60 /* Note.swift */; };
 		3A5C8B0F260A839600063EA5 /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B0E260A839600063EA5 /* ArchitectsDaughter-Regular.ttf */; };
 		3A5C8B10260A839600063EA5 /* ArchitectsDaughter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3A5C8B0E260A839600063EA5 /* ArchitectsDaughter-Regular.ttf */; };
@@ -87,6 +93,7 @@
 		3A1B2043260E71CC006DA9D2 /* NoteRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteRow.swift; sourceTree = "<group>"; };
 		3A1B204D260E8DD3006DA9D2 /* AddNoteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddNoteButton.swift; sourceTree = "<group>"; };
 		3A1DFADD2617983F004E35BD /* SquatchMD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquatchMD.swift; sourceTree = "<group>"; };
+		3A1DFAF42619168E004E35BD /* DocumentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentRepository.swift; sourceTree = "<group>"; };
 		3A22E4BE26074DB30094CF60 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 		3A5C8B0E260A839600063EA5 /* ArchitectsDaughter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "ArchitectsDaughter-Regular.ttf"; sourceTree = "<group>"; };
 		3A5C8B18260A84F500063EA5 /* Cabin-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cabin-MediumItalic.ttf"; sourceTree = "<group>"; };
@@ -127,6 +134,8 @@
 				3ADEEF3A2604058F00816B85 /* FirebaseFirestoreSwift-Beta in Frameworks */,
 				3A1DFAE92617B455004E35BD /* SwiftUIX in Frameworks */,
 				3ADEEF3E2604058F00816B85 /* FirebaseAuth in Frameworks */,
+				3A1DFAFC261916B4004E35BD /* FirebaseStorageSwift-Beta in Frameworks */,
+				3A1DFAFA261916B4004E35BD /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +148,8 @@
 				3A16D6EC260F2E28006A7DB1 /* HighlightedTextEditor in Frameworks */,
 				3A1DFAEF2617B462004E35BD /* SwiftUIX in Frameworks */,
 				3A1B2066260EF9BF006DA9D2 /* FirebaseFirestore in Frameworks */,
+				3A1DFB00261916BE004E35BD /* FirebaseStorageSwift-Beta in Frameworks */,
+				3A1DFAFE261916BE004E35BD /* FirebaseStorage in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +204,7 @@
 			children = (
 				3A16D6EF260F3C6E006A7DB1 /* NoteRepository.swift */,
 				3ADEEF65260449BE00816B85 /* SessionStore.swift */,
+				3A1DFAF42619168E004E35BD /* DocumentRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -306,6 +318,8 @@
 				3ADEEF432604058F00816B85 /* FirebaseFirestore */,
 				3A16D6E7260F2E12006A7DB1 /* HighlightedTextEditor */,
 				3A1DFAE82617B455004E35BD /* SwiftUIX */,
+				3A1DFAF9261916B4004E35BD /* FirebaseStorage */,
+				3A1DFAFB261916B4004E35BD /* FirebaseStorageSwift-Beta */,
 			);
 			productName = "SquatchNotes (iOS)";
 			productReference = 3ADEEEE62603B30300816B85 /* SquatchNotes.app */;
@@ -330,6 +344,8 @@
 				3A1B2067260EF9C8006DA9D2 /* FirebaseFirestoreSwift-Beta */,
 				3A16D6EB260F2E28006A7DB1 /* HighlightedTextEditor */,
 				3A1DFAEE2617B462004E35BD /* SwiftUIX */,
+				3A1DFAFD261916BE004E35BD /* FirebaseStorage */,
+				3A1DFAFF261916BE004E35BD /* FirebaseStorageSwift-Beta */,
 			);
 			productName = "SquatchNotes (macOS)";
 			productReference = 3ADEEEEE2603B30300816B85 /* SquatchNotes.app */;
@@ -436,6 +452,7 @@
 				3ABD4C89261506F800176438 /* NoteListViewModel.swift in Sources */,
 				3A1B2035260E5FD0006DA9D2 /* UIColor.swift in Sources */,
 				3A22E4BF26074DB30094CF60 /* Note.swift in Sources */,
+				3A1DFAF52619168E004E35BD /* DocumentRepository.swift in Sources */,
 				3A1B203F260E6FF0006DA9D2 /* NoteEditor.swift in Sources */,
 				3A1B204E260E8DD3006DA9D2 /* AddNoteButton.swift in Sources */,
 				3ADEEF66260449BE00816B85 /* SessionStore.swift in Sources */,
@@ -449,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A1DFAF62619168E004E35BD /* DocumentRepository.swift in Sources */,
 				3ABD4C8F2615072F00176438 /* NoteCellViewModel.swift in Sources */,
 				3ABD4CA72616235A00176438 /* SignInView.swift in Sources */,
 				3A16D6DA260F115A006A7DB1 /* SignOut.swift in Sources */,
@@ -785,6 +803,26 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 3A1DFAE72617B455004E35BD /* XCRemoteSwiftPackageReference "SwiftUIX" */;
 			productName = SwiftUIX;
+		};
+		3A1DFAF9261916B4004E35BD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		3A1DFAFB261916B4004E35BD /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
+		};
+		3A1DFAFD261916BE004E35BD /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		3A1DFAFF261916BE004E35BD /* FirebaseStorageSwift-Beta */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 3ADEEF302604058F00816B85 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = "FirebaseStorageSwift-Beta";
 		};
 		3ADEEF392604058F00816B85 /* FirebaseFirestoreSwift-Beta */ = {
 			isa = XCSwiftPackageProductDependency;

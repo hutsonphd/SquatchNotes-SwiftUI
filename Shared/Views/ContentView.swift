@@ -35,11 +35,11 @@ struct ContentView: View {
                             NotesList()
                                 .navigationBarTitle("Notes")
                                 .navigationBarItems(trailing: HStack {
-                                    AddNoteButton()
                                     SignOut()
                                 })
                         }
                     }
+                    AddNoteButton()
                 }
             } else {
                 AuthView()
